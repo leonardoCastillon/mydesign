@@ -1,0 +1,204 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: helvetica; 
+}
+header{
+
+  background: #E0D829;
+}
+/* -------------------------------------------------------------------------
+    HEADER INNER
+------------------------------------------------------------------------- */
+#header .header-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  z-index: 1;
+}
+
+
+
+.enable-fixed-header #header .header-inner { position: fixed; }
+
+/* -------------------------------------------------------------------------
+    HEADER TOOL-BAR
+------------------------------------------------------------------------- */
+
+#header .header-tool-bar .container {
+  position: relative;
+  background-color: #503906;
+}
+
+#header .header-tool-bar .container:before {
+  position: absolute;
+  margin-left: -55px;
+  border-bottom: 21px solid transparent;
+  border-right: 20px solid #fff;
+  outline: 0;
+  width: 20px;
+}
+#header .header-tool-bar a {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+#header .header-tool-bar a:hover,
+#header .header-tool-bar button:hover,
+#header .header-tool-bar button.hover { color: #fff; }
+
+#header .header-tool-bar i {
+  margin-right: 8px;
+  font-size: 12px;
+  color: #fff;
+}
+
+#header .header-form {
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: 9999;
+}
+
+/* -------------------------------------------------------------------------
+    HEADER LEFT
+------------------------------------------------------------------------- */
+#header .header-contact li {
+  display: inline;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  line-height: 40px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+#header .header-contact li:before {
+  padding-right: 15px;
+  margin-right: 20px;
+  border-right: 1px solid #fff;
+  content: "";
+}
+
+#header .header-contact li:first-child:before { display: none; }
+
+/* -------------------------------------------------------------------------
+    HEADER RIGHT
+------------------------------------------------------------------------- */
+#header .header-right {
+  position: relative;
+  float: right;
+  text-align: right; 
+}
+
+#header .header-right button {
+  padding: 5px 0;
+  line-height: 30px;
+}
+
+#header .header-social {
+  position: relative;
+  display: inline-block;
+  line-height: 39px;
+  vertical-align: middle;
+}
+
+#header .header-social li {
+  display: inline;
+  margin: 0 7px;
+}
+
+#header .header-social li a:hover > i { 
+  color: #ccc; 
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+#header .header-social li a > i {
+  font-size: 18px;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+#header .header-social li:last-child,
+#header .header-social i:last-child { margin-right: 0; }
+
+/* -------------------------------------------------------------------------
+    HEADER LOGIN
+------------------------------------------------------------------------- */
+#header .header-login {
+  padding: 0 15px 0 20px;
+  margin: 0 20px 0 16px;
+  display: inline;
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+#header .header-login .header-form { left: 133px; }
+
+#header .header-login form {
+  padding: 20px;
+  background: rgba(17, 26, 39, 0.7);
+}
+
+#header .header-login form .alert-message {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+  display: none;
+}
+
+#header .header-login form input,
+#header .header-login form button {
+  width: 100%;
+  max-width: 250px;
+}
+
+#header .header-login form input { 
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+#header .header-login form input:-ms-input-placeholder { color:#fff; }
+
+#header .header-login form input::-webkit-input-placeholder { color:#fff; }
+
+#header .header-login form input:-moz-placeholder {
+   color:#fff;
+   opacity: 1;
+}
+
+#header .header-login form input::-moz-placeholder {
+   color:#fff;
+   opacity: 1;
+}
+#header .header-login .forgot-password { 
+  margin-bottom: 0; 
+  font-family: 'roboto slab', sans-serif;
+}
+
+/*...............desde aqui------------------------------------*/
+nav .menu{
+	margin-top:-60px;
+	position: relative;
+	background-color:  #030302  ;
+
+}
+.sticky-top-2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 54px;
+  z-index: 1030;
+}
